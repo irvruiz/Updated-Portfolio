@@ -1,0 +1,385 @@
+* {
+  /* global styling setting */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  font-family: "Azeret Mono", monospace;
+}
+:root {
+  /* Create Variables to reused and consolidate repetivie code */
+  --border-right: 5px solid white;
+  --margin-left-border: 100px;
+  --float-right: right;
+  --float-left: left;
+  --display-flex: flex;
+  --hundred-percent: 100%;
+  --hundred-pixel: 100px;
+  --position-relative: relative;
+  --position-absolute: absolute;
+  --center-position: center;
+  --background-gradient: linear-gradient(to right, #e4e7eb, #29323c);
+}
+body {
+  /* styling a graidant for the body by using --background-gradient variable*/
+  background: var(--background-gradient);
+}
+/* global display for display: flex */
+.work,
+.work-di,
+.navbar-items,
+ul,
+li,
+.about-me,
+.resume {
+  display: var(--display-flex);
+
+  /* text-align: center; */
+}
+/* Aside tag positioning */
+aside {
+  float: var(--float-left);
+  margin: var(--hundred-pixel);
+}
+/* p tag width  */
+p {
+  width: var(--hundred-percent);
+}
+/* h2 tag font size */
+h2 {
+  font-size: 40px;
+}
+
+/* header styling */
+header {
+  height: var(--hundred_pixel);
+  width: var(--hundred_percent);
+  background: var(--background-gradient);
+}
+/* Styling for my name in the navbar */
+header .title-Irvin {
+  margin-top: 1%;
+  float: right;
+  padding-left: 5%;
+  background-size: 10%;
+  font-size: 2.0vw;
+  background-image: rgb(107, 115, 128);
+}
+/* Navbar [positioning for position, color and size */
+.navbar-items {
+  float: var(--float-right);
+  margin-right: 5%;
+  margin-top: 2%;
+  font-size: 1.5vw;
+  color: white;
+ 
+}
+/* Navbar list styling */
+.navbar-items ul,
+li {
+  text-align: var(--center-position);
+  margin-left: 10px;
+  color: white;
+}
+/*  banner styling height and background */
+.banner {
+  height: 200px;
+  position: relative;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("Photos/clock.jpg");
+
+}
+/* Banner .banner-text styling positioning, size, font and color*/
+.banner-text {
+ font-family: cursive;
+ font-size: 1.0vw;
+  position: absolute;
+  margin: -18px 0 0 1235px;
+  color: #e4e7eb;
+
+}
+/* Banner .quote_name styling positioning, size, font and color*/
+.quote-name {
+  font-size: 1.0vw;
+  color: white; 
+  position: absolute;
+  margin: -30px 0 0 350px;
+}
+/* styling of my profile picture making it a circle and position */
+.icon {
+  height: 200px;
+  position: relative;
+  margin: 0;
+  border-radius: 100%;
+}
+/* banner and capation text position set to absolute */
+/* .banner-text, */
+#caption {
+  position: var(--position-absolute);
+}
+/* Positioning for about me p tag */
+.about-me p {
+  margin-top: 5%;
+  margin-right: 35%;
+  font-size: large;
+}
+/* work-div and icon position */
+.work-div,
+.icon {
+  position: var(--position-relative);
+}
+/* work set to flex wrap */
+.work {
+  flex-wrap: wrap;
+}
+/* .work-div stying for positiong, text and background color */
+.work-div {
+  width: 26vw;
+  height: 20vh;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  opacity: 0.5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 10px solid white;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* .work-div:first-child display set to block, image to refactor project, size and positioning */
+.work-div:first-child {
+  display: block;
+  background-image: url("Assets/02-advanced-css-homework-demo.gif");
+
+  margin-top: 4vw;
+  width: 80%;
+  height: 30vw;
+}
+/* Caption styling for size, padding, positioning, text and background color */
+#caption {
+  width: 12vw;
+  height: 50px;
+  bottom: 0px;
+  padding-top: 1%;
+  color: #60adaf;
+  font-weight: bold;
+  margin-left: 0%;
+  margin-bottom: 5%;
+  background-image: linear-gradient(135deg, #4e4b55 10%, #7a7c96 100%);
+}
+
+
+/*button styling position, margin and display set to flex  */
+.button-div {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+/* button styling for positioning, margin, border, font color, tranform text to uppercase */
+.btn-grad {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+/* Button background color set to linear gradient for right end */
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+}
+/* Button background color set to linear gradient to 135 degrees*/
+.btn-grad {
+  background-image: linear-gradient(135deg, #f97794 10%, #623aa2 100%);
+}
+
+/* contact section width set to 100% and display set to flex */
+.contact {
+  width: var(--hundred_percent);
+}
+/*contact ul tag width set to 100%  */
+.contact ul {
+  width: 100%;
+}
+/* contact li tag styling for margin, width, display set flex, text aligned to center and font size */
+.contact li {
+  margin: 5%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  text-align: var(--center-position);
+  font-size: 1vw;
+}
+/* border float left for all the aside tags */
+.border-float-left {
+  float: left;
+}
+/* styling for borders */
+.border-work,
+.border-contact,
+  
+/*.border-work height */
+.border-work {
+  height: 1000px;
+}
+
+/*.border-contact  height  */
+.border-contact {
+  display: inline-flex;
+  height: var(--hundred_pixel);
+}
+/* pesduo classes */
+/* turn opacity to 1,rotate 3 degrees with a box shadown when hovering over work images  */
+.work-div:hover {
+  opacity: 1;
+  transform: rotate(3deg);
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 3);
+}
+/* changes color of nav items and my name to aqua when hovering over it */
+.navbar-items a:hover,
+.title-Irvin:hover {
+  color: aqua;
+}
+.banner-text:hover {
+  color: darkslategrey;
+  opacity: 1;
+}
+/* changes color of button + direction when hovering over it */
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+/* rotates profile image 360 with border degrees */
+.banner img:hover {
+  transition: 3000ms;
+  transform: rotate(360deg);
+  border: 10px solid firebrick;
+}
+/* end of pesudo classes */
+/* start of media query */
+@media (max-width: 770px) {
+  /* changes size and margin of banner text when screen size is less than 770px */
+  .banner-text {
+     font-size: 3vw;
+    margin-right: 6%; 
+     padding-right: 100px; 
+  }
+  @media (max-width: 770px) {
+    /* changes size and margin of banner text when screen size is less than 770px */
+    .quote_name {
+       margin-top: 40%; 
+       font-size: 2vw;
+      position: absolute;
+      display: block;
+      margin-left: 50%; 
+    }
+  }
+  /* changes work-div width when screen size is less than 770px */
+  .work-div {
+    width: 100%;
+  }
+  /* changes captions display and width when screen size is less than 770px */
+  #caption {
+    display: block;
+    width: 100%;
+  }
+  /* changes main content margin and width when screen size is less than 770px */
+  main {
+    margin: 0;
+    width: 100%;
+  }
+  /* changes .contact display to column and styling when screen size is less than 770px */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+  /* changes .contact -> ul and li tags display to column and styling when screen size is less than 770px */
+  .contact ul,
+  li {
+    font-size: 2vw !important;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  /* changes .resume display to column and styling when screen size is less than 770px */
+  .resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+  /* changes .border-contact display to column and styling when screen size is less than 770px */
+  .border-contact {
+    display: flex;
+    flex-direction: column;
+    border-right: 0;
+    height: 50px;
+    border-bottom: 5px solid white;
+    width: 50%;
+  }
+  /* changes .about-me display to column and styling when screen size is less than 770px */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* changes .about-me -> p tag display to column and styling when screen size is less than 770px */
+  .about-me p {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 80%;
+    margin-top: -5%;
+    /* transition: ease all 0.5s; */
+  }
+  /* changes.border-about-resume display to column and styling when screen size is less than 770px */
+  .border-about-resume {
+    display: flex;
+    flex-direction: column;
+    border-right: 0;
+    height: 50px;
+    border-bottom: 5px solid white;
+    width: 50%;
+    padding-bottom: 10%;
+  }
+  /* changes .border-work display to column and styling when screen size is less than 770px */
+  .border-work {
+    display: flex;
+    flex-direction: column;
+    border-right: 0;
+    height: 50px;
+    border-bottom: 5px solid white;
+    width: 50%;
+    padding-bottom: 10%;
+  }
+  /* changes .work-section display to column and styling when screen size is less than 770px */
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* changes .contact -> h2 tag font size to 40px when screen size is less than 770px */
+  .contact h2 {
+    font-size: 40px;
+  }
+  /* end of media query */
+}
